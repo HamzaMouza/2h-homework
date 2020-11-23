@@ -10,7 +10,7 @@ import { User } from '../interfaces/user.interface';
  */
 
 function randomDelay() {
-    return Math.random() * 4000;
+    return Math.random() * 2000;
 }
 
 @Injectable()
@@ -30,7 +30,10 @@ export class BackendService {
         }
     ];
 
-    public storedUsers: User[] = [{ id: 111, name: 'Victor' }];
+    public storedUsers: User[] = [
+        { id: 111, name: 'Victor' },
+        { id: 112, name: 'Hamza' }
+    ];
 
     private lastId: number = 1;
 

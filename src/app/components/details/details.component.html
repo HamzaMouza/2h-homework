@@ -1,0 +1,8 @@
+<div *ngIf="ticket$ | async">
+    <h4>ticket$.description</h4>
+    <h5>ticket$.assigneeId</h5>
+    <h5>ticket$ .completed</h5>
+</div>
+<div *ngIf="!ticket$">
+    <p>Please select a ticket</p>
+</div>
